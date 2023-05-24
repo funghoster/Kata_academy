@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding:0
+}
+* {
+	font-family: 'TT Lakes', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.btn {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+
+    }
+    &:hover {
+        transform: scale(1.2);
+    }
+
+}
+@import 'aside';

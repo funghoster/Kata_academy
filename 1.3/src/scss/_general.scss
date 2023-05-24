@@ -79,8 +79,7 @@ body {
             content: '';
             position: absolute;
             width: 8px;
-            height: 40px;
-            left: -4px;
+            height: 32px;
             border-radius: 20%;
             background: #41F6D7;
         }
@@ -93,6 +92,9 @@ body {
         margin-left: 16px;
         display: flex;
         overflow: scroll;
+        &::-webkit-scrollbar {
+            width: 0%;
+        }
     }
     &__item {
         display: table-cell;
