@@ -1,5 +1,8 @@
 .menu {
-    position: relative;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 320px;
     height: 100vh;
     padding: 18px 24px 32px 24px;
@@ -13,16 +16,15 @@
         margin-right: 78px;
     }
     &__links {
+        flex-grow: 1;
+        max-height: 416px;
         margin-top: 50px;
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            li {
-                display: block;
-                margin-bottom: 32px;
-            }
-        }
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: space-around;
     }
     &__link {
         position: relative;
@@ -67,8 +69,11 @@
         }
     }
     &__footer {
-        position: absolute;
-        bottom: 0;
+        height: 188px;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     &__btns {
         display: flex;
@@ -102,8 +107,7 @@
         }
     }
     &__langs {
-        margin-top: 40px;
-        margin-bottom: 32px;
+        margin-top: auto;
     }
     &__lang-btn {
         border: none;
