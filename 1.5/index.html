@@ -6,92 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="src/css/style.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__container">
-                <div class="header__left">
-                    <a href="#" class="header__menu icon-circle">
-                        <img src="src/icons/header/menu.svg" alt="menu">
+        <div class="header__container">
+            <div class="header__left">
+                <a href="#" class="header__menu icon-circle">
+                    <img src="src/icons/header/menu.svg" alt="menu">
+                </a>
+                <a href="#" class="header__logo">
+                    <img src="src/icons/header/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-add">
+                    <a href="#" class="header__call icon-circle"">
+                        <img src="src/icons/header/call.svg" alt="call">
                     </a>
-                    <a href="#" class="header__logo">
-                        <img src="src/icons/header/logo.svg" alt="logo">
+                    <a href="#" class="header__chat icon-circle"">
+                        <img src="src/icons/header/chat.svg" alt="chat">
+                    </a>
+                    <a href="#" class="header__profile icon-circle"">
+                        <img src="src/icons/header/profile.svg" alt="profile">
                     </a>
                 </div>
-                <div class="header__right">
-                    <div class="header__right-add">
-                        <a href="#" class="header__call icon-circle"">
-                            <img src="src/icons/header/call.svg" alt="call">
-                        </a>
-                        <a href="#" class="header__chat icon-circle"">
-                            <img src="src/icons/header/chat.svg" alt="chat">
-                        </a>
-                        <a href="#" class="header__profile icon-circle"">
-                            <img src="src/icons/header/profile.svg" alt="profile">
-                        </a>
-                    </div>
-                    <div class="header__right-basic">
-                        <a href="#" class="header__repair icon-circle"">
-                            <img src="src/icons/header/repair.svg" alt="repair">
-                        </a>
-                        <a href="#" class="header__search icon-circle">
-                            <img src="src/icons/header/search.svg" alt="search">
-                        </a>
-                    </div>
+                <div class="header__right-basic">
+                    <a href="#" class="header__repair icon-circle"">
+                        <img src="src/icons/header/repair.svg" alt="repair">
+                    </a>
+                    <a href="#" class="header__search icon-circle">
+                        <img src="src/icons/header/search.svg" alt="search">
+                    </a>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="main__container">
-                <h1 class="main__header">
-                    Услуги и сервисы
-                </h1>
-                <div class="main__link">
-                    <div class="main__repair-name">Оставить заявку</div>
-                    <a href="#" class="main__repair icon-circle"">
-                        <img src="src/icons/header/repair.svg" alt="repair">
-                    </a>
-                    <div class="main__search-name">Статус ремонта</div>
-                    <a href="#" class="main__search icon-circle">
-                        <img src="src/icons/header/search.svg" alt="search">
-                    </a>
-                </div>
+        <div class="main__container">
+            <h1 class="main__header">
+                Услуги и сервисы
+            </h1>
+            <div class="main__link">
+                <div class="main__repair-name">Оставить заявку</div>
+                <a href="#" class="main__repair icon-circle"">
+                    <img src="src/icons/header/repair.svg" alt="repair">
+                </a>
+                <div class="main__search-name">Статус ремонта</div>
+                <a href="#" class="main__search icon-circle">
+                    <img src="src/icons/header/search.svg" alt="search">
+                </a>
             </div>
-            <ul class="main__list">
-                <li><div class="main__item main__item--focus">Ремонтируемые устройства</div></li>
-                <li><div class="main__item">Ремонтируемые бренды</div></li>
-                <li><div class="main__item">Цены на услуги</div></li>
-                <li><div class="main__item">Адреса сервисных центров</div></li>
-                <li><div class="main__item">Специальные цены</div></li>
-            </ul>
-            <div class="main__content">
-                <div class="main__wrapper">
-                    <div class="main__descr">
-                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <br>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                    </div>
-                    
-                    <div class="main__more">
-                        <img src="src/icons/more.svg" alt="more">
-                        Читать далее
-                    </div>
+        </div>
+        <ul class="main__list">
+            <li><div class="main__item main__item--focus">Ремонтируемые устройства</div></li>
+            <li><div class="main__item">Ремонтируемые бренды</div></li>
+            <li><div class="main__item">Цены на услуги</div></li>
+            <li><div class="main__item">Адреса сервисных центров</div></li>
+            <li><div class="main__item">Специальные цены</div></li>
+        </ul>
+        <div class="main__content">
+            <div class="main__wrapper">
+                <div class="main__descr">
+                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <br>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </div>
-                <img src="src/img/logo_img.jpg" alt="" class="main__img">
+                
+                <button class="main__more-btn">
+                    <img src="src/icons/more.svg" alt="more">
+                    Читать далее
+                </button>
+                <button class="main__hidden-btn btn-hidden">
+                    <img class="img-up" src="src/icons/more.svg" alt="more">
+                    Скрыть
+                </button>
             </div>
+            <img src="src/img/logo_img.jpg" alt="" class="main__img">
         </div>
     </main>
     <section class="brands">
-        <div class="brands__header">
-            Ремонт техники различных брендов
-            <div class="brands__scroll-bar">
-                
+        <div class="brands__header swiper">
+            <h2>Ремонт техники различных брендов</h2>
+            
+            <div class="brands__content swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/lenovo.png" alt="lenovo_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/samsung.png" alt="samsung_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/apple.png" alt="apple_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/view_sonic.png" alt="view_sonic_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/bosch.png" alt="bosch_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/hp.png" alt="hp_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/acer.png" alt="acer_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/sony.png" alt="sony_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/lenovo.png" alt="lenovo_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/samsung.png" alt="samsung_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="brands__item">
+                        <img src="src/img/brands/apple.png" alt="apple_img" class="brands__img">
+                        <div class="brands__arrow"></div>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <button class="brands__more-btn ">
+                <img src="src/icons/more.svg" alt="more">
+                Показать все
+            </button>
+            <button class="brands__hidden-btn btn-hidden">
+                <img class="img-up" src="src/icons/more.svg" alt="more">
+                Скрыть
+            </button>
         </div>
     </section>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
