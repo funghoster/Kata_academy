@@ -54,3 +54,30 @@ for (let i = 0; i < button.length; i++){
     console.log(button[i])
   };
 }
+
+
+function closeMenu() {
+  document.querySelector('.menu').classList.remove('menu--active')
+  document.querySelector('.menu__background').classList.remove('menu__background--active')
+}function openMenu() {
+  document.querySelector('.menu').classList.add('menu--active')
+  document.querySelector('.menu__background').classList.add('menu__background--active')
+}
+document.getElementById('background-close').addEventListener("click", closeMenu);
+document.getElementById('button-close').addEventListener("click", closeMenu);
+document.querySelector('.header__menu').addEventListener("click", openMenu);
+
+/* document.querySelector('.menu__header--close').onclick = function() {
+  const menu = document.querySelector('.menu');
+  const menuActive = document.querySelector('.menu--active')
+  if (menuActive){
+    menu.remove('menu--active')
+  }
+};
+document.querySelector('.header__menu').onclick = function() {
+  const menu = document.querySelector('.menu');
+  const menuActive = document.querySelector('.menu--active')
+  if (menuActive){
+    menu.remove('menu--active')
+  }
+}; */

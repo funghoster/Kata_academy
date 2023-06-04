@@ -1,9 +1,6 @@
 @media (min-width: 768px) {
-    .container {
-        padding: 0 25px;
-    }
     .header {
-        padding: 24px 0;
+        padding: 24px 25px;
         &__right {
             &-add {
                 display: flex;
@@ -28,6 +25,7 @@
         }
     }
     .main {
+        padding: 25px;
         &__list {
             margin-bottom: 0;
             margin-left: 0;
@@ -39,6 +37,9 @@
         &__descr {
             margin: 0;
             height: 160px;
+            &--full {
+                height: 100%;
+            }
         }
         &__header {
             padding: 0;
@@ -46,14 +47,60 @@
                 left: -29px;
             }
         }
-        &__more {
+        &__more-btn, &__hidden-btn {
             padding: 16px 0;
+            margin: 0;
         }
         &__img {
             margin-left: 48px;
             width: 50%;
             border-radius: 10px;
         }
+    }
+    .brands {
+        height: 100%;
+        h2 {
+            height: 56px;
+        }
+        &__content {
+            display: grid;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 24px;
+            height: 160px;
+            width: calc(100% - 48px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 72px;
+            gap: 16px 24px;
+            overflow: hidden;
+            &--full {
+                height: 100%;
+            }
+        }
+        &__item {
+            width: 100%;
+        }
+        &__more-btn, &__hidden-btn {
+            display: block;
+            border: none;
+            padding: 0;
+            margin: 0 auto 34px 24px;
+            height: 24px;
+            cursor: pointer;
+            img {
+                margin-right: 8px;
+            }
+
+        }
+    }
+    .swiper-slide {
+        display: block;
+        flex-shrink: 0;
+        height: 72px;
+        width: 100%;
+    }
+    .btn-hidden {
+        display: none;
     }
 }
 
@@ -76,6 +123,14 @@
             a {
                 margin-right: 32px;
             }
+            label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+        &__repair {
+            margin-left: 7px;
         }
         &__descr {
             span {
@@ -86,6 +141,34 @@
         &__img {
             margin-left: 36px;
         }
+        &__more-btn, &__hidden-btn {
+            display: none;
+        }
         
+    }
+    .brands {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .btn-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        margin-left: 320px;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        box-shadow: none;
+        height: auto;
+        &__header {
+            &--close {
+                display: none;
+            }
+        }
     }
 }

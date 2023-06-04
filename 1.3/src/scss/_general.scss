@@ -1,6 +1,11 @@
 body {
     margin: 0;
 }
+button {
+    border: none;
+    background-color:inherit;
+    cursor: pointer;
+}
 .icon-circle {
     display: block;
     position: relative;
@@ -18,12 +23,12 @@ body {
 
 }
 .header {
-    max-height: 88px;
+    height: 88px;
     padding: 24px 16px;
     &__container {
         display: flex;
         padding: 0;
-        margin: 0;
+        margin-top: -10px;
         justify-content: space-between;
         align-items: center;
     }
@@ -102,6 +107,7 @@ body {
     &__item {
         display: table-cell;
         vertical-align: middle;
+        background-color: transparent;
         padding: 8px 16px;
         white-space: nowrap;
         color: #7E7E82;
@@ -122,11 +128,13 @@ body {
             height: 40px;
         }
     }
-    &__more {
+    &__more-btn, &__hidden-btn {
         display: block;
-        width: 132px;
+        border: none;
+        padding: 0;
+        margin: 24px auto 34px 24px;
         height: 24px;
-        padding: 16px;
+        background: none;
         cursor: pointer;
         img {
             margin-right: 8px;
@@ -141,6 +149,9 @@ body {
             line-height: 18px;
             margin: 0;
         }
+        &--full {
+            height: 100%;
+        }
 
     }
     &__img {
@@ -149,4 +160,13 @@ body {
     &__link {
         display: none;
     }
+    &__repair {
+        margin-right: 16px;
+    }
+}
+.btn-hidden {
+    display: none;
+}
+.img-up {
+    transform: rotate(180deg);
 }

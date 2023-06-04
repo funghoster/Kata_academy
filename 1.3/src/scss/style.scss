@@ -1,6 +1,9 @@
 * {
 	font-family: 'TT Lakes', sans-serif;
     font-weight: 500;
+    box-sizing: border-box;
 }
 @import 'general';
+@import 'brands';
+@import 'aside';
 @import 'media';
